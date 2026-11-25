@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="bg" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <title>Работа с автоклава — стъпка по стъпка — Tonkov</title>
+  <meta name="description" content="Как се работи с автоклава: зареждане, настройка на контролера, протичане на цикъла, охлаждане и правила за безопасност. Със снимки и видео.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tonkov">
+  <meta property="og:title" content="Работа с автоклава — стъпка по стъпка">
+  <meta property="og:description" content="Как се работи с автоклава: зареждане, настройка на контролера, протичане на цикъла, охлаждане и правила за безопасност. Със снимки и видео.">
+  <meta property="og:image" content="../img/site/hero_section.jpg">
+  <meta name="theme-color" content="#0f0d0b">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preload" href="../fonts/sofia-sans-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../css/site.css" rel="stylesheet">
+</head>
+<body class="">
+<a class="visually-hidden-focusable skip-link" href="#main">Към съдържанието</a>
+
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-xl navbar-dark site-nav fixed-top" aria-label="Основна навигация">
+    <div class="container-fluid site-nav__inner">
+      <a class="navbar-brand" href="../index.html" aria-label="Tonkov — начало">
+        <img src="../img/logo-white.png" alt="Tonkov" width="319" height="125">
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-xl-last">
+        <a class="site-nav__phone d-none d-md-inline-flex" href="tel:+359889906296">
+          <i class="bi bi-telephone" aria-hidden="true"></i><span>0889 906 296</span>
+        </a>
+        <a class="site-nav__cart" href="../cart/index.html" aria-label="Количка">
+          <i class="bi bi-bag" aria-hidden="true"></i>
+          
+          <span class="site-nav__badge" data-cart-count hidden>0</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu" aria-label="Меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-end site-menu" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+        <div class="offcanvas-header">
+          <span class="offcanvas-title" id="siteMenuLabel">Меню</span>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Затвори"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-xl-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../category/darvo.html">Дърво</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../category/avtoklavi.html">Автоклави</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../category/monitoring.html">Мониторинг и контрол</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../category/kotli-i-gorelki.html">Котли и горелки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../autoclave/recipes.html">Рецепти</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery.html">Галерия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">За нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Контакти</a>
+            </li>
+          </ul>
+          <div class="site-menu__contacts d-xl-none">
+            <a href="tel:+359889906296"><i class="bi bi-telephone" aria-hidden="true"></i> 0889 906 296 <small>Автоклави, дърво, котли и горелки</small></a>
+            <a href="tel:+359883519006"><i class="bi bi-telephone" aria-hidden="true"></i> 0883 519 006 <small>Мониторинг и контрол</small></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<div class="container">
+  <header class="page-head">
+
+<nav aria-label="Навигационна пътека" class="crumbs">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../index.html">Начало</a></li>
+<li class="breadcrumb-item"><a href="../category/avtoklavi.html">Автоклави</a></li>
+<li class="breadcrumb-item active" aria-current="page">Работа с автоклава</li>  </ol>
+</nav>
+    <h1 class="display-2">Работа с автоклава</h1>
+    <p class="lead">От зареждането до отварянето на капака — всяка стъпка по реда си.</p>
+  </header>
+
+  <div class="note-box note-box--warn mb-5">
+    <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+    <p>Прочетете ръководството преди първа употреба. Автоклавът работи под налягане — никога не развивайте болтовете на капака, докато уредът е горещ или манометърът показва налягане.</p>
+  </div>
+
+  <section class="guide-section" aria-labelledby="razdel-1">
+    <h2 id="razdel-1">Подготовка и зареждане</h2>
+    <ol class="guide-steps">
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">01</span>
+        <div>
+          <h3>Монтирайте групата с манометъра и крана</h3>
+          <div class="prose"><p>Навийте групата с манометъра, предпазния клапан и крана върху щуцера на капака.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/01-manometar.webp" alt="Група с манометър, предпазен клапан и кран над капака на автоклава" width="469" height="412" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">02</span>
+        <div>
+          <h3>Отворете автоклава</h3>
+          <div class="prose"><p>Развийте гайките на капака и го свалете. На дъното на съда е разположен електрическият нагревател.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/02-otvoren-sad.webp" alt="Отворен автоклав отгоре, на дъното се вижда нагревателят" width="422" height="403" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">03</span>
+        <div>
+          <h3>Поставете подложката за бурканите</h3>
+          <div class="prose"><p>Спуснете подложката на дъното, върху нагревателя, с краката надолу.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/03-podlozhka.webp" alt="Спускане на подложката за бурканите в съда" width="400" height="424" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step">
+        <span class="guide-step__num" aria-hidden="true">04</span>
+        <div>
+          <h3>Налейте вода</h3>
+          <div class="prose"><p>Напълнете с вода до около 1 см под подложката. Нагревателят трябва да е потопен.</p></div>
+        </div>
+      </li>
+      <li class="guide-step">
+        <span class="guide-step__num" aria-hidden="true">05</span>
+        <div>
+          <h3>Заредете бурканите</h3>
+          <div class="prose"><p>Наредете бурканите върху подложката, един върху друг.</p></div>
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">06</span>
+        <div>
+          <h3>Затворете капака</h3>
+          <div class="prose"><p>Поставете капака така, че заварената на него тръба за сензора да попадне в свободното пространство между бурканите.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/06-kapak-i-kontroler.webp" alt="Затворен автоклав с манометър и закрепен контролер" width="377" height="472" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step">
+        <span class="guide-step__num" aria-hidden="true">07</span>
+        <div>
+          <h3>Затегнете и монтирайте контролера</h3>
+          <div class="prose"><p>Затегнете гайките последователно „на кръст“, равномерно. На един от болтовете закрепете скобата на контролера, след което вкарайте температурния сензор докрай в тръбата на капака.</p></div>
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">08</span>
+        <div>
+          <h3>Отворете съвсем малко крана</h3>
+          <div class="prose"><p>Ръкохватката застава под ъгъл спрямо тръбата. През него излиза въздухът при загряването.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/08-kran.webp" alt="Кранът на автоклава, леко отворен — ръкохватката е под ъгъл" width="371" height="378" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">09</span>
+        <div>
+          <h3>Свържете захранването</h3>
+          <div class="prose"><p>Включете кабела на нагревателя в изхода на контролера, след което включете контролера в мрежата.</p>
+<p>Контактът трябва да е надежден, с добро заземяване. Не използвайте тънки удължители и разклонители — нагревателят е мощен консуматор.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/09-zahranvane.webp" alt="Свързване на кабела на нагревателя към контролера" width="366" height="402" loading="lazy" decoding="async">
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="guide-section" aria-labelledby="razdel-2">
+    <h2 id="razdel-2">Работа с контролера</h2>
+    <ol class="guide-steps">
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">10</span>
+        <div>
+          <h3>Настройка на режима</h3>
+          <div class="prose"><p>След включване контролерът показва екран с настройки. Със стрелките задайте:</p>
+<ul><li><strong>Време</strong> — продължителността на автоклавирането в минути;</li><li><strong>Температура</strong> — температурата на автоклавиране в °C.</li></ul>
+<p>Стойностите се задават според рецептата на продукта. Натиснете СТАРТ, за да започне програмата.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/ekran-nastroyki.webp" alt="Екран с настройки на контролера: време 60 минути, температура 120 °C, бутон СТАРТ" width="425" height="566" loading="lazy" decoding="async">
+<img src="../img/guide/ekran-shema.webp" alt="Схема на работния екран: приложени настройки, състояние, текуща температура и състояние на нагревателя (червено — включен, черно — изключен)" width="662" height="702" loading="lazy" decoding="async">        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="guide-section" aria-labelledby="razdel-3">
+    <h2 id="razdel-3">Протичане на цикъла</h2>
+    <ol class="guide-steps">
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">11</span>
+        <div>
+          <h3>Загряване</h3>
+          <div class="prose"><p>Нагревателят работи, водата се загрява. Кранът е отворен леко — през него излиза въздухът и пара.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/status-zagryavane.webp" alt="Надпис на контролера: Загряване" width="496" height="91" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">12</span>
+        <div>
+          <h3>Затворете крана</h3>
+          <div class="prose"><p>При достигане на 97 °C контролерът изписва да затворите крана. Завъртете ръкохватката напречно на тръбата, докрай.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/status-zatvori-kran.webp" alt="Надпис на контролера: Затв. кран" width="497" height="87" loading="lazy" decoding="async">
+<img src="../img/guide/kran-zatvoren.webp" alt="Затворен кран — ръкохватката е напречно на тръбата" width="311" height="306" loading="lazy" decoding="async">        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">13</span>
+        <div>
+          <h3>Изчакване</h3>
+          <div class="prose"><p>Съдът е затворен и температурата се повишава над 100 °C заедно с налягането, до зададената стойност.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/status-izchakvane.webp" alt="Надпис на контролера: Изчакване" width="497" height="90" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">14</span>
+        <div>
+          <h3>Автоклавиране</h3>
+          <div class="prose"><p>Достигната е зададената температура и започва отброяване на зададените минути. Контролерът поддържа температурата, като включва и изключва нагревателя.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/status-avtoklavirane.webp" alt="Надпис на контролера: Автоклавиране, остават 48 минути" width="493" height="159" loading="lazy" decoding="async">
+        </div>
+      </li>
+      <li class="guide-step has-image">
+        <span class="guide-step__num" aria-hidden="true">15</span>
+        <div>
+          <h3>Готово</h3>
+          <div class="prose"><p>Цикълът е завършил и нагревателят е изключен. Оставете автоклава да се охлади сам.</p></div>
+        </div>
+        <div class="guide-step__media">
+          <img src="../img/guide/status-gotovo.webp" alt="Надпис на контролера: Готово!" width="493" height="147" loading="lazy" decoding="async">
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="guide-section" aria-labelledby="razdel-4">
+    <h2 id="razdel-4">Охлаждане и отваряне</h2>
+    <ol class="guide-steps">
+      <li class="guide-step">
+        <span class="guide-step__num" aria-hidden="true">16</span>
+        <div>
+          <h3>Охладете и отворете</h3>
+          <div class="prose"><p>След съобщението „Готово!“ оставете автоклава да се охлади. Капакът може да се отвори едва когато температурата падне под 60 °C. Първо отворете крана, изчакайте да се изравнят наляганията и чак тогава развийте гайките на капака.</p></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section class="guide-section" aria-labelledby="razdel-5">
+    <h2 id="razdel-5">Безопасност</h2>
+    <ul class="guide-safety">
+<li><i class="bi bi-shield-exclamation" aria-hidden="true"></i> Не включвайте нагревателя без вода в съда.</li><li><i class="bi bi-shield-exclamation" aria-hidden="true"></i> Не блокирайте и не запушвайте предпазния клапан.</li><li><i class="bi bi-shield-exclamation" aria-hidden="true"></i> Включвайте контролера само в изправен заземен контакт; пазете го от пряка пара и заливане с вода.</li><li><i class="bi bi-shield-exclamation" aria-hidden="true"></i> Бурканите трябва да са с винтова капачка и не трябва да се препълват.</li><li><i class="bi bi-shield-exclamation" aria-hidden="true"></i> Внимавайте при отваряне — парата причинява тежки изгаряния. Използвайте ръкавици при изваждане на бурканите.</li>    </ul>
+  </section>
+
+  <section class="guide-section" aria-labelledby="video">
+    <h2 id="video">Видео</h2>
+    <div class="video-grid">
+
+<figure class="video">
+  <button type="button" class="video__button" data-youtube="NZPiMVJGRBU" aria-label="Пусни видеото: Процесите накратко">
+    <img src="../img/video/NZPiMVJGRBU.webp" alt="" width="640" height="360" loading="lazy" decoding="async">
+    <span class="video__play" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+  </button>
+  <figcaption>Процесите накратко</figcaption>
+</figure>
+
+<figure class="video">
+  <button type="button" class="video__button" data-youtube="bhvWceyjCHw" aria-label="Пусни видеото: Управление в режим „пара“">
+    <img src="../img/video/bhvWceyjCHw.webp" alt="" width="640" height="360" loading="lazy" decoding="async">
+    <span class="video__play" aria-hidden="true"><i class="bi bi-play-fill"></i></span>
+  </button>
+  <figcaption>Управление в режим „пара“</figcaption>
+</figure>
+    </div>
+  </section>
+
+  <div class="py-5 my-lg-4 d-flex flex-wrap gap-2">
+    <a class="btn btn-dark btn-lg" href="../docs/avtoklav-rakovodstvo.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Ръководство (PDF)</a>
+    <a class="btn btn-outline-dark btn-lg" href="../autoclave/recipes.html">Рецепти</a>
+    <a class="btn btn-outline-dark btn-lg" href="../product/avtoklav.html">Към автоклава</a>
+  </div>
+</div>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-4">
+        <a href="../index.html" class="site-footer__logo" aria-label="Tonkov — начало"><img src="../img/logo-white.png" alt="Tonkov" width="319" height="125" loading="lazy"></a>
+        <p class="site-footer__about">ЕТ „Боян Тонков“ — семейна работилница в Караисен от 1992 г. Дърво, метал и електроника под един покрив.</p>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 offset-lg-1">
+        <h2 class="site-footer__title">Направления</h2>
+        <ul class="list-unstyled site-footer__links">
+          <li><a href="../category/darvo.html">Дървени изделия</a></li>
+          <li><a href="../category/avtoklavi.html">Автоклави</a></li>
+          <li><a href="../category/monitoring.html">Мониторинг и контрол</a></li>
+          <li><a href="../category/kotli-i-gorelki.html">Пелетни котли и горелки</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <h2 class="site-footer__title">Информация</h2>
+        <ul class="list-unstyled site-footer__links">
+          <li><a href="../autoclave/recipes.html">Рецепти за автоклав</a></li>
+          <li><a href="../autoclave/guide.html">Работа с автоклава</a></li>
+          <li><a href="../gallery.html">Галерия</a></li>
+          <li><a href="../about.html">За нас</a></li>
+          <li><a href="../order.html">Поръчка и доставка</a></li>
+          <li><a href="../privacy-policy.html">Лични данни</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-lg-3">
+        <h2 class="site-footer__title">Контакти</h2>
+        <ul class="list-unstyled site-footer__links site-footer__contacts">
+          <li>
+            <span>Автоклави, дърво, котли и горелки</span>
+            <a href="tel:+359889906296">0889 906 296</a> · <a href="mailto:bt@tonkov.eu">bt@tonkov.eu</a>
+          </li>
+          <li>
+            <span>Мониторинг и контрол</span>
+            <a href="tel:+359883519006">0883 519 006</a> · <a href="mailto:vt@tonkov.eu">vt@tonkov.eu</a>
+          </li>
+          <li><span>Адрес</span>с. Караисен, ул. „41-ва“ № 17, община Павликени</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© 2026 ЕТ „Боян Тонков“</span>
+      <span>Доставка с Еконт от офис Павликени · Наложен платеж или банков превод</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../js/site.js"></script>
+</body>
+</html>
